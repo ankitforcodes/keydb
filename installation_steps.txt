@@ -1,0 +1,20 @@
+Instructions are based on CentOS 7 machine
+
+1. Create the machine
+2. Update the machine with patches:
+    yum update -y
+    
+3. Install the required packages:
+    yum install wget -y
+    yum install -y python3
+    yum groupinstall 'Development Tools' -y
+    yum install nano -y
+    
+4. Download the rpm
+    wget https://download.keydb.dev/pkg/open_source/rpm/centos7/x86_64/keydb-latest-1.el7.x86_64.rpm
+
+5. Install the downloaded RPM:
+    sudo yum install ./keydb-latest-1.el7.x86_64.rpm
+    
+6. The main configuration file is located at:
+    /etc/keydb/keydb.conf
